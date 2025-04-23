@@ -20,10 +20,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - First Download the osticket files and unzip them
 - Enable ISS
-- Item 3
-- Item 4
-- Item 5
-- 
+- Install A Database
+- Link osTicket to Database
 
 <h2>Installation Steps</h2>
 
@@ -75,11 +73,26 @@ and name the file to "osTicket" cap senstive and no space betweeen os and Ticket
 <img width="1440" alt="Screenshot 2025-04-22 at 3 38 52 PM" src="https://github.com/user-attachments/assets/496dfe7a-24e0-41ff-843f-3c122f4b44eb" />
 </p>
 <br />
+Now that we should be at this window right here however you will notice some extensions are not yet enabled so we will activate them right now which are the following: PHP Imap, Intl Extension, 
+<p>
+<img width="1440" alt="Screenshot 2025-04-23 at 3 11 11 PM" src="https://github.com/user-attachments/assets/932be5c7-e24e-4591-900f-77b7d4ada1db" />
+We are going back to the PHP manager which is on the ISS we click on osticket then sites, then Default Web Services, and under osTicket we will open the PHP Manger and double left click and get to this window.
+  <img width="1440" alt="Screenshot 2025-04-23 at 3 18 55 PM" src="https://github.com/user-attachments/assets/c29981e2-0ca7-4815-9459-7eeac0d70784" />
+  Now we will click on the enable or disable extensions and enable the extensions mentioned earlier. Once you enable and fresh the other tab with the osTicket yours should look like this 
+<img width="1440" alt="Screenshot 2025-04-23 at 3 24 06 PM" src="https://github.com/user-attachments/assets/cdf4f647-1b30-4cb3-a1c8-2068cf5e6d9f" />
+We will look into rename a file called ost-sampleconfig.php to ost-config.php  
+<img width="1440" alt="Screenshot 2025-04-23 at 3 27 29 PM" src="https://github.com/user-attachments/assets/42bc51e0-1075-411e-94a5-2bc6b147153d" />
+Now we are going back to the browser to finish configuring the osTicket, click continue on the browser and then here you will create a name for the helpdesk and signup with email and names and passwords that best can be remembered and that correspond to you.Now once you get to the last portion it will say MySQL and this is basically use setting up the database where it will store all the data and tickets history from our ticketing system to do this we will need to setup and install HeidiSQL we will find this on the first files we downloaded.
+<img width="1440" alt="Screenshot 2025-04-23 at 3 48 27 PM" src="https://github.com/user-attachments/assets/156a9317-29cf-4dcc-8c51-06c1a87252bb" />
+After you were able to install the SQL we now will need to connect our database we created earlier and use login with the password we made which was really easy and should not be used in real life called "root" 
+  <img width="1440" alt="Screenshot 2025-04-23 at 3 52 25 PM" src="https://github.com/user-attachments/assets/36a13b8b-4663-461c-bab4-72cbadd44a16" />
+So at this point we have our database tied to our ticketing system and now we are going to open a a new data table to which all the files will be sent and organized to and if you right click where it says unamed and it will give you the option to open the new table and there is where you will name it osTicket make sure its type like this exaclty.
+<img width="1440" alt="Screenshot 2025-04-23 at 3 59 35 PM" src="https://github.com/user-attachments/assets/c1519cc1-7584-4746-a84b-9b0599baf6c5" />
+Continue setting up my osTicket on the browser by putting in your name of database, username, and password and then click install now
+<img width="1440" alt="Screenshot 2025-04-23 at 4 22 57 PM" src="https://github.com/user-attachments/assets/ad137214-a83d-4779-a8e6-e61bd74af161" />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>  
+Congratulations at this point you have setup your own osTicket System. You can save the URL given on the browser so that you can login as a admin.
 </p>
 <br />
